@@ -57,8 +57,7 @@ class SentenceAutocomplete:
         max_length: int = 50,
         temperature: float = 1.0,
         top_k: int = 50,
-        top_p: float = 0.95,
-        num_return_sequences: int = 3
+        top_p: float = 0.95
     ) -> List[str]:
         """
         Generate sentence completions for a partial sentence.
@@ -70,7 +69,6 @@ class SentenceAutocomplete:
             temperature: Temperature for sampling (higher = more random)
             top_k: Top-k sampling parameter (0 to disable)
             top_p: Top-p (nucleus) sampling parameter
-            num_return_sequences: Number of sequences to generate
 
         Returns:
             List of completed sentences
@@ -90,7 +88,7 @@ class SentenceAutocomplete:
             outputs = self.model.generate(
                 input_ids,
                 max_length=max_length,
-                num_return_sequences=min(num_return_sequences, num_completions),
+                num_return_sequences=num_completions,
                 temperature=temperature,
                 top_k=top_k if top_k > 0 else None,
                 top_p=top_p,
