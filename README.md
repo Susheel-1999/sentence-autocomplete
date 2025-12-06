@@ -36,3 +36,6 @@ python app.py
 - **Top-p (Nucleus) Sampling**: Sample from smallest set with cumulative prob ≥ p → Better diversity
 - **Temperature Control**: Adjust randomness (0=deterministic, 2=creative)
 
+### Streamlit UI
+<img width="1756" height="953" alt="Screenshot 2025-12-06 at 6 04 41 PM" src="https://github.com/user-attachments/assets/de495a11-c742-467e-886b-28925e7f87e3" />
+
