@@ -26,6 +26,8 @@ cd sentence-autocomplete
 pip install -r requirements.txt
 ```
 
+3. **First Run**: The system will automatically download the GPT-2 model from HuggingFace on first use. This requires an internet connection and may take a few minutes. The model will be cached locally for future use.
+
 ## Usage
 
 ### Command Line Interface
@@ -80,6 +82,15 @@ for i, completion in enumerate(completions, 1):
 - `top_p`: Nucleus sampling - cumulative probability threshold (default: 0.95)
   - Range: 0.0-1.0
 - `max_length`: Maximum length of generated text (default: 50)
+
+## Quick Start
+
+Run the example script to see the system in action:
+```bash
+python example.py
+```
+
+This will demonstrate various features including basic completion, temperature control, top-k sampling, and top-p (nucleus) sampling.
 
 ## Examples
 
