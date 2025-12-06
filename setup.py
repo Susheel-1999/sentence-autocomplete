@@ -24,8 +24,8 @@ setup(
     ],
     python_requires=">=3.7",
     install_requires=[
-        "transformers>=4.30.0",
-        "torch>=2.0.0",
+        "transformers>=4.48.0",
+        "torch>=2.6.0",
     ],
     entry_points={
         "console_scripts": [
