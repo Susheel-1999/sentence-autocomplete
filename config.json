@@ -1,0 +1,11 @@
+{
+  "model_name": "gpt2",
+  "default_parameters": {
+    "num_completions": 3,
+    "max_length": 50,
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 0.95
+  },
+  "description": "Configuration for sentence autocomplete system"
+}
